@@ -1,0 +1,87 @@
+{
+  "expo": {
+    "name": "The Coffee Art",
+    "slug": "The-Coffee-Art",
+    "version": "2.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.app.thecoffeeart",
+      "requireFullScreen": true,
+      "infoPlist": {
+        "NSLocationAlwaysUsageDescription": "The Coffee Art only use your location to pin point your exact delivery address and to find nearby shops and sellers.",
+        "NSLocationWhenInUseUsageDescription": "The Coffee Art only use your location to pin point your exact delivery address and to find nearby sellers and sellers.",
+        "NSCameraUsageDescription": "The Coffee Art will use your camera only to take your profile picture for your account."
+      },
+      "associatedDomains": [
+        "applinks:thecoffeeart.ae/",
+        "applinks:thecoffeeart.ae/*"
+      ]
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "useNextNotificationsApi": true,
+      "package": "com.app.thecoffeeart",
+      "versionCode": 1,
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "https",
+              "host": "thecoffeeart.ae",
+              "pathPrefix": "/*"
+            },
+            {
+              "scheme": "http",
+              "host": "thecoffeeart.ae",
+              "pathPrefix": "/*"
+            },
+            {
+              "scheme": "https",
+              "host": "thecoffeeart.ae",
+              "pathPrefix": "/"
+            },
+            {
+              "scheme": "http",
+              "host": "thecoffeeart.ae",
+              "pathPrefix": "/"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ]
+    },
+    "androidStatusBar": {
+      "barStyle": "light-content"
+    },
+    "notification": {
+      "icon": "./assets/icon.png",
+      "iosDisplayInForeground": true,
+      "color": "#FEC009"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "description": ""
+  }
+}
